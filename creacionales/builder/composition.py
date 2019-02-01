@@ -2,26 +2,25 @@
 class Composition:
     
     """ The final product.
-    A composition is assembled by the `Director' class from
-    parts made by `Builder'. Both these classes have
-    influence on the resulting object.
-    """
+    A composition is constructed by the `Director' class using the
+    parts made by `Builder'.
+        """
 
     def __init__(self):
-        self.__extra  = list()
+        self.__extra  = None
         self.__bag  = None
         self.__collection    = None
 
     def setCollection(self, collection):
         self.__collection = collection
 
-    def addExtra(self, extra):
-        self.__extra.append(extra)
+    def setExtra(self, extra):
+        self.__extra = extra
 
     def setBag(self, bag):
         self.__bag = bag
 
     def description(self):
         print ("Collection: %s" % self.__collection.exclusivity)
-        print ("Bag Style: %d" % self.__bag.style)
-        print ("extras size: %d\'" % self.__extra[0].size)
+        print ("Bag Style: %s" % self.__bag.style)
+        print ("extras size: %s\'" % self.__extra.size)

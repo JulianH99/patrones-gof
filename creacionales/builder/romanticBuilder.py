@@ -1,24 +1,24 @@
 from builder import Builder
 from compositionParts import Extra, Bag, Collection
 
-class NissanBuilder(Builder):
+class RomanticBuilder(Builder):
 
     """ Concrete Builder implementation.
-    This class builds parts for Nissan's family cars.
+    This class builds parts for a collection of Romantic Books.
     """
 
     def getExtra(self):
         extra = Extra()
-        extra.size = 22
+        extra.size = "Some poster"
         return extra
 
     def getBag(self):
         bag = Bag()
-        bag.style = 400
+        bag.style = "Light"
         return bag
 
     def getCollection(self):
         collection = Collection()
-        collection.exclusivity = "SUVV"
+        collection.exclusivity = "High"
         return collection
         
