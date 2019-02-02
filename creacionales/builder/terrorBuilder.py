@@ -5,6 +5,7 @@ class TerrorBuilder(Builder):
 
     """ Concrete Builder implementation.
     This class builds parts for a collection of Terror Books.
+    Each get has a variation according to the kind of builder
     """
 
     def getExtra(self):

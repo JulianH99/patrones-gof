@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
 from numbers_module import Numbers
 
-
 class AbstractNumbersList(ABC):
 
     @abstractmethod

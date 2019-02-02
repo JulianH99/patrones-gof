@@ -3,12 +3,16 @@ from romanticBuilder import RomanticBuilder
 from director import Director
 
 def main():
+
+    """
+        The inicialization of a two kinds of builders
+    """
     romanticBuilder = RomanticBuilder()
     terrorBuilder = TerrorBuilder()
 
     director = Director()
 
-    # Build a terror Pack
+    # The construction of a terror Pack
     print ("Terror Pack")
     director.setBuilder(terrorBuilder)
     terrorCollection = director.getComposition()
@@ -16,7 +20,7 @@ def main():
 
     print ("")
 
-    # Build a romantic Pack
+    # The construction of a romantic Pack
     print ("Romantic Pack")
     director.setBuilder(romanticBuilder)
     romanticCollection = director.getComposition()
