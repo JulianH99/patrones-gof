@@ -1,23 +1,23 @@
 from builder import Builder
 from compositionParts import Extra, Bag, Collection
 
-class JeepBuilder(Builder):
+class TerrorBuilder(Builder):
 
     """ Concrete Builder implementation.
-    This class builds parts for Jeep's SUVs.
+    This class builds parts for a collection of Terror Books.
     """
 
     def getExtra(self):
         extra = Extra()
-        extra.size = 22
+        extra.size = "Some fan art"
         return extra
 
     def getBag(self):
         bag = Bag()
-        bag.style = 400
+        bag.style = "Dark"
         return bag
 
     def getCollection(self):
         collection = Collection()
-        collection.exclusivity = "SUV"
+        collection.exclusivity = "Low"
         return collection

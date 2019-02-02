@@ -1,7 +1,7 @@
 class Builder:
 
     """ Creates various parts of a composition of Books.
-    This class is responsible for constructing all
+    The class is responsible for constructing all
     the parts for a composition.
     """
 

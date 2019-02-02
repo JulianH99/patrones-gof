@@ -1,4 +1,8 @@
 # Composition parts
+"""
+These are the parts of a Composition of Books
+"""
+
 class Extra:
     size = None
 

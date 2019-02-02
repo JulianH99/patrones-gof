@@ -1,11 +1,12 @@
+import random
 from composition import Composition
 
 class Director:
     
-    """ Controls the construction process.
-    Director has a builder associated with him. Director then
+    """ Just like indicates the name, is the one who "directs" 
+    the construction process. Director has a builder associated with him, after 
     delegates building of the smaller parts to the builder and
-    assembles them together.
+    then une them together.
     """
 
     __builder = None
@@ -13,11 +14,11 @@ class Director:
     def setBuilder(self, builder):
         self.__builder = builder
 
-    # The algorithm for assembling a car
+    # The construction of a Car
     def getComposition(self):
         composition = Composition()
 
-        # First goes the collection
+        # Star the collection
         collection = self.__builder.getCollection()
         composition.setCollection(collection)
 
@@ -25,11 +26,7 @@ class Director:
         bag = self.__builder.getBag()
         composition.setBag(bag)
 
-        # And four extras
-        i = 0
-        while i < 4:
-            extra = self.__builder.getExtra()
-            composition.addExtra(extra)
-            i += 1
+        extra = self.__builder.getExtra()
+        composition.setExtra(extra)    
 
         return composition
