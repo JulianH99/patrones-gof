@@ -5,6 +5,7 @@ class RomanticBuilder(Builder):
 
     """ Concrete Builder implementation.
     This class builds parts for a collection of Romantic Books.
+    Each get has a variation according to the kind of builder
     """
 
     def getExtra(self):

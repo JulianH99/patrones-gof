@@ -14,7 +14,7 @@ class Director:
     def setBuilder(self, builder):
         self.__builder = builder
 
-    # The construction of a Car
+    # The construction of a Composition
     def getComposition(self):
         composition = Composition()
 
@@ -22,10 +22,11 @@ class Director:
         collection = self.__builder.getCollection()
         composition.setCollection(collection)
 
-        # Then bag
+        # Then add bag
         bag = self.__builder.getBag()
         composition.setBag(bag)
 
+        # Finish wiht an extra
         extra = self.__builder.getExtra()
         composition.setExtra(extra)    
 

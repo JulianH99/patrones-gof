@@ -11,6 +11,9 @@ class Composition:
         self.__bag  = None
         self.__collection    = None
 
+    """ The respectives sets.
+        """
+
     def setCollection(self, collection):
         self.__collection = collection
 
@@ -19,6 +22,9 @@ class Composition:
 
     def setBag(self, bag):
         self.__bag = bag
+
+    """ The description in display about each composition.
+        """
 
     def description(self):
         print ("Collection: %s" % self.__collection.exclusivity)
