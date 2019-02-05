@@ -9,11 +9,11 @@
     * [Prototype](./creacionales/prototype/readme.md)
     * [Singleton](./creacionales/singleton/readme.md)
 * Estructurales
-    * Adapter
-    * Composite
-    * Facade
-    * Flyweight
-    * Proxy
+    * [Adapter](./estructurales/adapter/readme.md)
+    * [Composite](./estructurales/composite/readme.md)
+    * [Facade](./estructurales/facade/readme.md)
+    * [Flyweight](./estructurales/flyweight/readme.md)
+    * [Proxy](./estructurales/proxy/readme.md)
 
 ## Realizados por
 * Julián Andrés Barrios Corredor - 20171020123
